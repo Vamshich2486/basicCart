@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Contact Us</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ecommerce</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn"><i class="fa fa-sign-in-alt"></i> Login </button>
+                <button class="btn"><i class="fa fa-user-plus"></i> Register</button>
+                
+                <a href="./cart.html" id="cart-btn" class="btn">
+                    <i class="fa fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1><i class="fa-solid fa-envelope-circle-check"></i> Contact Us</h1>
+        <form>
+            <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+            <input type="email" id="email" placeholder="name@example.com">
+
+            <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+            <textarea id="message" rows="5" placeholder="Enter your message"></textarea>  
+
+            <button class="send-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

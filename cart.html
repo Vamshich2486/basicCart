@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce | Cart</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ecommerce</div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="btn"><i class="fa fa-sign-in-alt"></i> Login</button>
+        <button class="btn"><i class="fa fa-user-plus"></i> Register</button>
+        
+        <a href="./cart.html" id="cart-btn" class="btn">
+          <i class="fa fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin:20px;">Cart</h1>
+    <div class="cart-container">
+      <div class="item-list" id="cart-items"></div>
+      <div class="order-summary" id="order-summary"></div>
+    </div>
+  </main>
+
+  <script src="./cart.js"></script>
+</body>
+
+</html>

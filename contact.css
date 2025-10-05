@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+header {
+    background: #fff;
+    padding: 15px 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+
+.logo:hover {
+    color: #555;
+    cursor: pointer;
+}   
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: 1px solid #333;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #555;
+    color: #fff;
+}
+
+
+.nav-buttons a:hover {
+    background: #555;
+    color: rgb(255, 255, 255);
+}
+
+/* Contact Section */
+.contact {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #333;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
+}
+
+.send-btn {
+  width: 130px;
+  padding: 12px;
+  background-color: #c0c0c0;
+  color: rgb(14, 2, 0);
+  margin: 0 auto;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* dissable send button */
+.send-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#cart-btn{
+  text-decoration: none;
+  color: black;
+
+}
+#cart-btn a{
+  text-decoration: none;
+  color: black;
+}
+
+#cart-btn a:hover{
+  color: white;
+}

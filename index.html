@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce | Js </title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ecommerce</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn"><i class="fa fa-sign-in-alt"></i> Login </button>
+                <button class="btn"><i class="fa fa-user-plus"></i> Register</button>
+
+                <a href="./cart.html" id="cart-btn" class="btn">
+                    <i class="fa fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>New Season Arrivals</h2>
+            <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                is a little bit longer.</p>
+        </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section class="products">
+        <h2>Latest Products</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="men's clothing">Men's Clothing</button>
+            <button class="filter-btn" data-category="women's clothing">Women's Clothing</button>
+            <button class="filter-btn" data-category="jewelery">Jewelry</button>
+            <button class="filter-btn" data-category="electronics">Electronics</button>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="products-grid" id="products-container">
+
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
